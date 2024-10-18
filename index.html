@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortal Enemies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Forms and DOM Updates</h1>
+      </header>
+      <form name="enemyForm" id="enemyForm" action="#">
+        <!--
+        Try to do a 
+        -->
+        <input type="hidden" value="" id="uuid" />
+
+        <label for="enemy">Enemy</label>
+        <input type="text" id="enemy" name="enemy" maxlength="30" placeholder="Who did it" />
+        <label for="reason">Reason</label>
+        <textarea rows="4" id="reason" name="reason" maxlength="3000"></textarea>
+
+        <button id="btnCancel">Clear Form</button>
+        <button id="btnSave">Remember this Enemy</button>
+      </form>
+      <main>
+        <h2>My Enemies List</h2>
+        <!--
+      Sample enemy card
+      <div class="enemy" data-ref="jsa5k6df7s8k9fk0s4h1dkjshf33ksh">
+        <h3>Enemy Name</h3>
+        <p>What this person did to get on my enemy list.</p>
+        <button class="btnDelete"><i> </i><span>Forgive Them</span></button>
+      </div>
+      -->
+        <section id="enemies">
+          <!-- build the enemy cards here -->
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
